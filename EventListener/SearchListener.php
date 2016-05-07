@@ -1,6 +1,6 @@
 <?php
 
-namespace Intaro\PostgresSearchBundle\EventListener;
+namespace Alsatian\PostgresSearchBundle\EventListener;
 
 use Doctrine\ORM\Event\OnFlushEventArgs;
 use Doctrine\ORM\EntityManagerInterface;
