@@ -26,6 +26,6 @@ class TsrankFunction extends FunctionNode
     {
         return
             'ts_rank(' . $this->fieldName->dispatch($sqlWalker) . ', ' .
-            ' plainto_tsquery(' . $this->queryString->dispatch($sqlWalker) . '))';
+            ' to_tsquery(' . $this->queryString->dispatch($sqlWalker) . '))';
     }
 }
