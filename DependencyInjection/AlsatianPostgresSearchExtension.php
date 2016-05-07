@@ -1,6 +1,6 @@
 <?php
 
-namespace Intaro\PostgresSearchBundle\DependencyInjection;
+namespace Alsatian\PostgresSearchBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader;
@@ -8,7 +8,7 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 
-class IntaroPostgresSearchExtension extends Extension implements PrependExtensionInterface
+class AlsatianPostgresSearchExtension extends Extension implements PrependExtensionInterface
 {
     /**
      * {@inheritDoc}
@@ -27,7 +27,7 @@ class IntaroPostgresSearchExtension extends Extension implements PrependExtensio
         $config = [
             'dbal' => [
                 'types' => [
-                    'tsvector' => 'Intaro\PostgresSearchBundle\DBAL\TsvectorType'
+                    'tsvector' => 'Alsatian\PostgresSearchBundle\DBAL\TsvectorType'
                 ],
                 'mapping_types' => [
                     'tsvector' => 'tsvector'
@@ -36,10 +36,10 @@ class IntaroPostgresSearchExtension extends Extension implements PrependExtensio
             'orm' => [
                 'dql' => [
                     'string_functions' => [
-                        'tsquery' => 'Intaro\PostgresSearchBundle\DQL\TsqueryFunction',
-                        'plainto_tsquery' => 'Intaro\PostgresSearchBundle\DQL\PlainToTsqueryFunction',
-                        'tsrank' => 'Intaro\PostgresSearchBundle\DQL\TsrankFunction',
-                        'tsheadline' => 'Intaro\PostgresSearchBundle\DQL\TsheadlineFunction'
+                        'tsquery' => 'Alsatian\PostgresSearchBundle\DQL\TsqueryFunction',
+                        'plainto_tsquery' => 'Alsatian\PostgresSearchBundle\DQL\PlainToTsqueryFunction',
+                        'tsrank' => 'Alsatian\PostgresSearchBundle\DQL\TsrankFunction',
+                        'tsheadline' => 'Alsatian\PostgresSearchBundle\DQL\TsheadlineFunction'
                     ]
                 ]
             ]
