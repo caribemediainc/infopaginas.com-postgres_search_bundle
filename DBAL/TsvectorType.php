@@ -1,5 +1,5 @@
 <?php
-namespace Intaro\PostgresSearchBundle\DBAL;
+namespace Alsatian\PostgresSearchBundle\DBAL;
 
 use Doctrine\DBAL\Types\Type;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
