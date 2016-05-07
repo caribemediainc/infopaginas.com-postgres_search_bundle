@@ -34,7 +34,7 @@ class PlainToTsqueryFunction extends FunctionNode
         if (!is_null($this->regconfig)) {
             $result =
                 $this->fieldName->dispatch($sqlWalker)
-                . ' @@ to_tsquery('
+                . ' @@ plainto_tsquery('
                 . $this->regconfig->dispatch($sqlWalker) . ', '
                 . $this->queryString->dispatch($sqlWalker) . ')';
         } else {
