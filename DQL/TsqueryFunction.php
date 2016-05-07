@@ -1,5 +1,5 @@
 <?php
-namespace Intaro\PostgresSearchBundle\DQL;
+namespace Alsatian\PostgresSearchBundle\DQL;
 
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 use Doctrine\ORM\Query\Lexer;
