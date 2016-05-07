@@ -17,6 +17,6 @@
         "doctrine/orm": ">=2.2.3"
     },
     "autoload": {
-        "psr-0": { "Alsatian\\PostgresSearchBundle\\": "" }
+        "psr-4": {"Alsatian\\PostgresSearchBundle\\": ""}
     }
 }
