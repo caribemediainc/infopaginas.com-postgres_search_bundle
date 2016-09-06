@@ -1,5 +1,5 @@
 {
-    "name": "gkovrey/postgres-search-bundle",
+    "name": "spine/postgres-search-bundle",
     "type": "symfony-bundle",
     "description": "Tools to use full-text search PostgreSQL in Doctrine.",
     "keywords": ["doctrine2", "symfony3", "symfony2", "search", "postgresql"],
@@ -7,8 +7,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Gruzd Sergey",
-            "homepage": "https://github.com/ddmaster"
+            "name": "George Rovrey",
+            "homepage": "https://github.com/gkovrey"
         }
     ],
     "require": {
